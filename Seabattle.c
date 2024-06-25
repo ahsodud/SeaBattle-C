@@ -1,13 +1,9 @@
 //---------------------------------------------------------------------------------------------------------------------
-// a4.c
+// Seabattle.c
 //
 // My implementation of Sea Battle game. Has custom size, number of fields and seed.
 // Has open, dump, flag command. Also could save and load
 //
-//
-// Group: Group 3
-//
-// Author: 12134500
 //---------------------------------------------------------------------------------------------------------------------
 //
 #include <stdio.h>
