@@ -54,11 +54,13 @@ Complete program sequences with characters in correct colors can be found in the
 
 After the start message the player is prompted to input a command. At this point only the commands
 *load* and the *start* command are available. Using the *start* command will generate the map and open the first field
+
 **dump**
 
 The *dump* command will print the playing field twice: The first output shows all mines and every field indicates the
 number of adjacent mines with a number (every field is opened). The second output shows the playing field in its normal
 state during the previous turn
+
 **open**
 
 The *open* command opens a field and reveals either a mine or the number of mines in adjacent fields If the opened
@@ -66,6 +68,7 @@ field is a mine the game ends immediately. If the number of mines adjacent to th
 indicated at this field from this point on for all the following turns. If the number of mines adjacent to the opened
 field is `0` adjacent fields are opened until the border to closed fields is filled with numbers between `1` and `8`.
 This means, each time the command `open` is used, numbers are revealed (or the game ends if the field contains a mine)
+
 **flag**
 
 Flags can be used to mark fields which the player suspects are mines. If the `flag` command is called on a field which
@@ -75,10 +78,12 @@ not matter if the field was opened directly or is part of the opening process of
 The flag on an open field will not be shown when printing and it does not count towards the remaining flags. However,
 the field will still be marked as flagged in a save file as long as the flag is not removed again using the `flag`
 command
+
 **save and load**
 
 The game can be saved at any turn using the command *save*. The filename needs to be specified. After saving, the current state of the game is
 printed again. If the game is loaded using the command *load* the imported game overwrites the current game
+
 **quit**
 
 The game can be ended at any time with the "quit" command. After using this command, the playing field is printed once
