@@ -48,7 +48,8 @@ Complete program sequences with characters in correct colors can be found in the
   =========
 ```
 *Field size: 9 x 9, 10 mines hidden, 2 flags placed.*
-##Commands
+
+## Commands
 **start**
 
 After the start message the player is prompted to input a command. At this point only the commands
